@@ -27,7 +27,7 @@ set :deploy_to, '/home/deploy/apps/busy-bee'
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
 # Default value for linked_dirs is []
-# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'node_modules', 'public/system')
+set :linked_dirs, fetch(:linked_dirs, []).push('node_modules')
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -46,13 +46,6 @@ namespace :deploy do
     end
   end
 
-  # task :install do
-  #   on roles(:app) do
-      
-  #   end
-  # end
-
 end
 
 after "deploy:publishing", "deploy:restart"
-# after "deploy:updated", "deploy:install"
