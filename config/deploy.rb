@@ -27,7 +27,7 @@ set :deploy_to, '/home/deploy/apps/busy-bee'
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
 # Default value for linked_dirs is []
-set :linked_dirs, fetch(:linked_dirs, []).push('log', 'node_modules', 'public/system')
+# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'node_modules', 'public/system')
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -39,9 +39,11 @@ namespace :deploy do
   
   desc 'Restart application'
   task :restart do
-    # on roles(:app) do
-    #   execute :mkdir, '-p', current_path.join('tmp')
-    # end
+    on roles(:app) do
+      execute "cd #{current_path} && gulp production"
+      execute :mkdir, '-p', current_path.join('tmp')
+      execute :touch, current_path.join('tmp/restart.txt')
+    end
   end
 
 end

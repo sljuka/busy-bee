@@ -35,7 +35,9 @@
     ]
   },
   "dependencies": {
+    "express": "^4.12.4",
     "flux": "^2.0.3",
+    "gulp": "^3.8.11",
     "object-assign": "^2.0.0",
     "react": "^0.13.3",
     "react-bootstrap": "^0.22.6"
