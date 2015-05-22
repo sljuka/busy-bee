@@ -48,7 +48,7 @@ namespace :deploy do
 
   task :install do
     on roles(:app) do
-      execute "cd #{current_path} && gulp production"
+      # execute "cd #{current_path} && gulp production"
     end
   end
 
