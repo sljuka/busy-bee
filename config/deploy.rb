@@ -46,6 +46,13 @@ namespace :deploy do
     end
   end
 
+  task :install do
+    on roles(:app) do
+      execute "cd #{current_path} && gulp production"
+    end
+  end
+
 end
 
 after "deploy:publishing", "deploy:restart"
+after "deploy:updated", "deploy:install"
