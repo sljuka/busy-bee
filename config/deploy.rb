@@ -40,18 +40,19 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app) do
+      execute "cd #{current_path} && gulp production"
       execute :mkdir, '-p', current_path.join('tmp')
       execute :touch, current_path.join('tmp/restart.txt')
     end
   end
 
-  task :install do
-    on roles(:app) do
-      # execute "cd #{current_path} && gulp production"
-    end
-  end
+  # task :install do
+  #   on roles(:app) do
+      
+  #   end
+  # end
 
 end
 
 after "deploy:publishing", "deploy:restart"
-after "deploy:updated", "deploy:install"
+# after "deploy:updated", "deploy:install"
