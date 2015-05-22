@@ -21,7 +21,7 @@ export default React.createClass({
     return (
       <div className="container">
         <Jumbotron>
-          <h1>Learning Flux</h1>
+          <h1>BUSY-BEEE FUCK YEAH!</h1>
           <p>
             Below is a list of tasks you can implement to better grasp the patterns behind Flux.<br />
             Most features are left unimplemented with clues to guide you on the learning process.
