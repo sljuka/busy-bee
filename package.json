@@ -34,11 +34,16 @@
     ]
   },
   "dependencies": {
+    "babelify": "^6.1.1",
+    "browserify": "^10.2.1",
     "express": "^4.12.4",
     "flux": "^2.0.3",
     "gulp": "^3.8.11",
     "object-assign": "^2.0.0",
     "react": "^0.13.3",
-    "react-bootstrap": "^0.22.6"
+    "react-bootstrap": "^0.22.6",
+    "require-dir": "^0.3.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
