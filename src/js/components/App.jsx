@@ -1,62 +1,35 @@
 import React, {PropTypes} from 'react';
-import Button from 'react-bootstrap/lib/Button';
-import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-import Navbar from 'react-bootstrap/lib/Navbar';
-import Nav from 'react-bootstrap/lib/Nav';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import TaskList from './TaskList.jsx';
+import Navbar from './Navbar.jsx'
+import HomePage from './HomePage.jsx'
+import AboutPage from './AboutPage.jsx'
+import ProjectsPage from './ProjectsPage.jsx'
+import ContactPage from './ContactPage.jsx'
 
 export default React.createClass({
-  propTypes: {
-    tasks: PropTypes.array.isRequired,
-    onAddTask: PropTypes.func.isRequired,
-    onClear: PropTypes.func.isRequired
-  },
 
-  getDefaultProps() {
+  getInitialState() {
     return {
-      tasks: []
+      activePage: "home"
     }
   },
 
+  pageChange(page) {
+    this.setState({ activePage: page });
+  },
+
   render() {
-    let {onAddTask, onClear, tasks} = this.props;
+
+    var pages = {
+      "home" : <HomePage />,
+      "about" : <AboutPage />,
+      "projects": <ProjectsPage />,
+      "contact": <ContactPage />
+    }
+
     return (
       <div>
-        <Navbar>
-          <Nav className="nav-justified">
-            <NavItem className="selected">
-              HOME
-            </NavItem>
-            <NavItem>
-              ABOUT
-            </NavItem>
-            <NavItem>
-              PROJECTS
-            </NavItem>
-            <NavItem>
-              CONTACT
-            </NavItem>
-
-          </Nav>
-        </Navbar>
-        <div className="container">
-          <div className="row">
-            <div className="col-small-12">
-              <p className="welcome-note">
-              HELLO! I'M DAVID.
-              </p>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-small-12">
-              <p className="welcome-message">
-              I'm an <span className="green bold">IT engineer.</span> I'm looking forward to helping you!
-              </p>
-            </div>
-          </div>
-        </div>
+        <Navbar activePage={this.state.activePage} pageChange={this.pageChange} />
+        {pages[this.state.activePage]}
       </div>
     );
   }

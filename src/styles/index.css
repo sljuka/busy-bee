@@ -56,3 +56,32 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   font-size: 40px;
   color: black;
 }
+
+.about-page__main-row {
+  padding-top: 200px;
+}
+
+.about-page__main-row__skill-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.about-page__intro-text {
+  font-size: 20px;
+}
+
+.about-page__button-row {
+  margin-top: 40px;
+}
+
+button.about-page__button-row__cv-button {
+  border-radius: 0px;
+  background-color: black;
+  border-color: black;
+}
+
+button.about-page__button-row__cv-button:hover {
+  background-color: #111;
+  border-color: black;
+
+}
