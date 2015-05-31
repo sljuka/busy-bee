@@ -12,7 +12,7 @@ export default React.createClass({
   render() {
     return (
       <Navbar toggleNavKey={0}>
-        <Nav right eventKey={0} defaultNavExpended={false} className="nav-justified">
+        <Nav justified right eventKey={0} defaultNavExpended={false}>
 
           <NavItem onClick={this.handleClick} className={this.props.activePage == "home" ? "selected" : ""} >
             HOME
