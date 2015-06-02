@@ -9,15 +9,7 @@ export default React.createClass({
           <div className="row">
             <div className="col-small-12">
               <p className="welcome-note">
-                Projects.
-              </p>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-small-12">
-              <p className="welcome-message">
-              I am an <span className="green bold">IT engineer.</span> I am looking forward to helping you!
+                Temporary Placeholder
               </p>
             </div>
           </div>

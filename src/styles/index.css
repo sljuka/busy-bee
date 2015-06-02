@@ -36,7 +36,7 @@ nav.navbar .navbar-nav > li.selected > a {
 }
 
 nav.navbar .navbar-nav > li > a:hover {
-  color: #555;
+  color: #888;
 }
 
 nav.navbar .navbar-nav > li.selected > a:hover {
