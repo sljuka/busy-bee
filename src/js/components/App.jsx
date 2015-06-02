@@ -4,6 +4,9 @@ import HomePage from './HomePage.jsx'
 import AboutPage from './AboutPage.jsx'
 import ProjectsPage from './ProjectsPage.jsx'
 import ContactPage from './ContactPage.jsx'
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+import Footer from './Footer.jsx';
 
 export default React.createClass({
 
@@ -30,6 +33,7 @@ export default React.createClass({
       <div>
         <Navbar activePage={this.state.activePage} pageChange={this.pageChange} />
         {pages[this.state.activePage]}
+        <Footer></Footer>
       </div>
     );
   }

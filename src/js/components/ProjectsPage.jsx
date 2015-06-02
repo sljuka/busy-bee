@@ -4,7 +4,7 @@ export default React.createClass({
 
   render() {
     return (
-      <div className="container">
+      <div className="page container">
         <div className="row">
           <div className="row">
             <div className="col-small-12">

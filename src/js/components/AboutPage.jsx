@@ -7,7 +7,7 @@ export default React.createClass({
 
   render() {
     return (
-      <div className="container">
+      <div className="page container">
         <Row className="about-page__main-row">
           <Col xs={6} xsOffset={3} mdOffset={0} md={4} className="about-page__pic">
             <img src="images/slika_no_border.png"/>
@@ -49,12 +49,11 @@ export default React.createClass({
                 </p>
               </Col>
             </Row>
-          </Col>
-        </Row>
-
-        <Row className="about-page__button-row">
-          <Col xs={8} xsOffset={4} mdOffset={4}>
-            <Button className="about-page__button-row__cv-button" bsStyle="primary" bsSize="large">Curriculum Vitae</Button>
+            <Row className="about-page__button-row">
+              <Col xs={10} xsOffset={2}>
+                <Button href="localhost:8080/public/example.pdf" className="about-page__button-row__cv-button" bsStyle="primary" bsSize="large">Curriculum Vitae</Button>
+              </Col>
+            </Row>
           </Col>
         </Row>
 

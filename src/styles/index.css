@@ -1,5 +1,15 @@
 /*
   ####
+  BODY
+  ####
+*/
+
+body {
+  background-color: #ccc;
+}
+
+/*
+  ####
   CONTAINER
   ####
 */
@@ -9,6 +19,15 @@
     width: 970px;
   }
 } 
+
+.page.container {
+  background-color: white;
+  min-height: 900px;
+  margin-top: -60px;
+  margin-bottom: -40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 
 /*
   ####
@@ -36,6 +55,7 @@
 nav.navbar {
   border-radius: 0px;
   background-color: black;
+  margin-bottom: 0px;
 }
 
 nav.navbar .navbar-nav > li > a {
@@ -99,18 +119,18 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 }
 
 .about-page__button-row {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 40px;
 }
 
-button.about-page__button-row__cv-button {
+a.about-page__button-row__cv-button, button.about-page__button-row__cv-button {
   border-radius: 0px;
   background-color: black;
   border-color: black;
 }
 
-button.about-page__button-row__cv-button:hover {
-  background-color: #111;
+a.about-page__button-row__cv-button:hover, button.about-page__button-row__cv-button:hover {
+  background-color: #333;
   border-color: black;
 }
 
@@ -118,7 +138,13 @@ button.about-page__button-row__cv-button:hover {
   padding-bottom: 40px;
 }
 
-.about-page__pic {
+.about-page__info-row img, .about-page__info-row--padded img {
+  height: 70px;
+  margin-top: 4px;
+}
+
+.about-page__pic img {
+  height: 300px;
   margin-bottom: 40px;
 }
 
@@ -127,6 +153,15 @@ button.about-page__button-row__cv-button:hover {
   CONTACT PAGE
   ####
 */
+
+.contact-page__main-row {
+  padding-top: 200px;
+}
+
+.contact-page {
+  margin-top: 200px;
+}
+
 
 .contact-page label {
   font-size: 14px;
@@ -149,7 +184,7 @@ button.contact-page__button_row__message-button {
 }
 
 button.contact-page__button_row__message-button:hover {
-  background-color: #111;
+  background-color: #333;
   border-color: black;
 }
 
@@ -175,6 +210,7 @@ button.contact-page__button_row__message-button:hover {
   cursor: pointer;
 }
 
-.contact-page {
-  margin-top: 200px;
+footer {
+  height: 40px;
+  background-color: black;
 }

@@ -6,7 +6,7 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 export default React.createClass({
 
   handleClick(e) {
-    this.props.pageChange(e.target.text.toLowerCase())
+    this.props.pageChange(e.target.text.toLowerCase());
     e.preventDefault();
   },
 

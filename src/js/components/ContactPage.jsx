@@ -15,30 +15,31 @@ export default React.createClass({
     var ftooltip = <Tooltip>facebook.com/sljukic</Tooltip>;
 
     return (
-      <form className="contact-page">
-        <div className="container">
-          <Row className="contact-page__inputs">
+      <div className="page container">
+        <Row className="contact-page__inputs contact-page__main-row">
 
-            <Col xs={12} md={6}>
-              <Row className="contact-page__contact-circles">
-                <Col xs={9} xsOffset={3}>
+          <Col xs={12} md={6}>
+            <Row className="contact-page__contact-circles">
+              <Col xs={9} xsOffset={3}>
 
-                  <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
-                    <img src="images/google_circle.png"/>
-                  </OverlayTrigger>
-                  
-                  <OverlayTrigger placement="top" overlay={stooltip} trigger="click">
-                    <img src="images/skype_circle.png"/>
-                  </OverlayTrigger>
+                <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
+                  <img src="images/google_circle.png"/>
+                </OverlayTrigger>
+                
+                <OverlayTrigger placement="top" overlay={stooltip} trigger="click">
+                  <img src="images/skype_circle.png"/>
+                </OverlayTrigger>
 
-                  <OverlayTrigger placement="top" overlay={ftooltip} trigger="click">
-                    <img src="images/facebook_circle.png"/>
-                  </OverlayTrigger>
-                </Col>
-              </Row>
-            </Col>
+                <OverlayTrigger placement="top" overlay={ftooltip} trigger="click">
+                  <img src="images/facebook_circle.png"/>
+                </OverlayTrigger>
+              </Col>
+            </Row>
+          </Col>
 
-            <Col xs={12} md={6}>
+          <Col xs={12} md={6}>
+
+            <form className="cotact-form">
               <Input
                 type="text"
                 placeholder="Name"
@@ -52,17 +53,18 @@ export default React.createClass({
                 type="text"
                 placeholder="E-mail address"
                 label="*What's your E-mail address?" />
-            </Col>
+            </form>
 
-          </Row>
+          </Col>
 
-          <Row>
-            <Col contact-page__button_row mdOffset={6} xs={6}>
-              <Button className="contact-page__button_row__message-button" bsStyle="primary" bsSize="large">Send message</Button>
-            </Col>
-          </Row>
-        </div>
-      </form>
+        </Row>
+
+        <Row>
+          <Col contact-page__button_row mdOffset={6} xs={6}>
+            <Button className="contact-page__button_row__message-button" bsStyle="primary" bsSize="large">Send message</Button>
+          </Col>
+        </Row>
+      </div>
     );
   }
 });
