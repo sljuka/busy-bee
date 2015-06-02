@@ -23,6 +23,7 @@ body {
 .page.container {
   background-color: white;
   min-height: 900px;
+  padding-top: 200px;
 }
 
 /*
@@ -75,6 +76,12 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   border-color: black;
 }
 
+/*
+  ####
+  COMMON
+  ####
+*/
+
 .green {
   color: #cacf1b;
 }
@@ -83,11 +90,16 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   font-weight: bold;
 }
 
+/*
+  ####
+  HOME PAGE
+  ####
+*/
+
 .welcome-note {
   text-align: center;
   font-size: 40px;
   color: black;
-  margin-top: 200px;
 }
 .welcome-message {
   text-align: center;
@@ -101,31 +113,39 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   ####
 */
 
-.about-page__main-row {
-  padding-top: 200px;
-}
-
-.about-page__main-row__skill-list {
+.about-page__skill-list {
   list-style: none;
   padding-left: 0px;
+}
+
+.about-page__skill-list--padded {
+  list-style: none;
+  padding-left: 0px;
+  padding-bottom: 20px;
 }
 
 .about-page__intro-text {
   font-size: 14px;
 }
 
-.about-page__button-row {
-  margin-top: 100px;
-  margin-bottom: 40px;
+.about-page__intro-text--padded {
+  font-size: 14px;
+  padding-bottom: 20px;
 }
 
-a.about-page__button-row__cv-button, button.about-page__button-row__cv-button {
+a.about-page__cv-button, button.about-page__cv-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 0px;
   background-color: black;
   border-color: black;
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 7px;
 }
 
-a.about-page__button-row__cv-button:hover, button.about-page__button-row__cv-button:hover {
+a.about-page__cv-button:hover, button.about-page__cv-button:hover {
   background-color: #333;
   border-color: black;
 }
@@ -149,61 +169,56 @@ a.about-page__button-row__cv-button:hover, button.about-page__button-row__cv-but
   ####
 */
 
-.contact-page__main-row {
-  padding-top: 200px;
+button.contact-page__message-button {
+  float: right;
+  border-radius: 0px;
+  background-color: black;
+  border-color: black;
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 0px;
 }
 
-.contact-page {
-  margin-top: 200px;
+button.contact-page__message-button:hover {
+  background-color: #333;
+  border-color: black;
 }
-
 
 .contact-page label {
   font-size: 14px;
   display: block;
 }
 
-.contact-page input {
+.contact-page input[type='text'] {
+  height: 35px;
+  border-radius: 0px;
+  font-size: 14px;
   width: 100%;
 }
 
-.contact-page__inputs {
-  margin-bottom: 20px;
-}
-
-button.contact-page__button_row__message-button {
-  float: left;
-  border-radius: 0px;
-  background-color: black;
-  border-color: black;
-}
-
-button.contact-page__button_row__message-button:hover {
-  background-color: #333;
-  border-color: black;
-}
-
-.contact-page__inputs input[type='text'] {
-  height: 50px;
-  border-radius: 0px;
-  font-size: 14px;
-}
-
-.contact-page__inputs textarea {
+.contact-page textarea {
   font-size: 14px;
   border-radius: 0px;
+  width: 100%;
 }
 
-.contact-page__contact-circles {
+.contact-page__circles {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.contact-page__contact-circles img {
+.contact-page__circles img {
   display: inline-block;
   margin: 10px;
   cursor: pointer;
 }
+
+/*
+  ####
+  FOOTER
+  ####
+*/
 
 footer {
   height: 40px;

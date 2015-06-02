@@ -32,7 +32,11 @@ export default React.createClass({
     return (
       <div>
         <Navbar activePage={this.state.activePage} pageChange={this.pageChange} />
-        {pages[this.state.activePage]}
+
+        <div className="page container">
+          {pages[this.state.activePage]}
+        </div>
+
         <Footer></Footer>
       </div>
     );

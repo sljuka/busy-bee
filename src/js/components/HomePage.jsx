@@ -6,23 +6,17 @@ export default React.createClass({
 
   render() {
     return (
-      <div className="page container">
-        <div className="row">
-          <div className="col-small-12">
-            <p className="welcome-note">
-              HELLO! I AM DAVID.
-            </p>
-          </div>
-        </div>
+      <Row>
+        <Col xs={12}>
+          <p className="welcome-note">
+            HELLO! I AM DAVID.
+          </p>
 
-        <div className="row">
-          <div className="col-small-12">
-            <p className="welcome-message">
+          <p className="welcome-message">
             I am an <span className="green bold">IT engineer.</span> I am looking forward to helping you!
-            </p>
-          </div>
-        </div>
-      </div>
+          </p>
+        </Col>
+      </Row>
     );
   }
 });

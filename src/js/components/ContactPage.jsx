@@ -15,56 +15,47 @@ export default React.createClass({
     var ftooltip = <Tooltip>facebook.com/sljukic</Tooltip>;
 
     return (
-      <div className="page container">
-        <Row className="contact-page__inputs contact-page__main-row">
+      <Row className="contact-page">
 
-          <Col xs={12} md={6}>
-            <Row className="contact-page__contact-circles">
-              <Col xs={9} xsOffset={3}>
+        <Col xs={9} xsOffset={3} mdOffset={1} md={5} className="contact-page__circles">
+          
+          <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
+            <img src="images/google_circle.png"/>
+          </OverlayTrigger>
+          
+          <OverlayTrigger placement="top" overlay={stooltip} trigger="click">
+            <img src="images/skype_circle.png"/>
+          </OverlayTrigger>
 
-                <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
-                  <img src="images/google_circle.png"/>
-                </OverlayTrigger>
-                
-                <OverlayTrigger placement="top" overlay={stooltip} trigger="click">
-                  <img src="images/skype_circle.png"/>
-                </OverlayTrigger>
+          <OverlayTrigger placement="top" overlay={ftooltip} trigger="click">
+            <img src="images/facebook_circle.png"/>
+          </OverlayTrigger>
 
-                <OverlayTrigger placement="top" overlay={ftooltip} trigger="click">
-                  <img src="images/facebook_circle.png"/>
-                </OverlayTrigger>
-              </Col>
-            </Row>
-          </Col>
+        </Col>
 
-          <Col xs={12} md={6}>
+        <Col xs={12} md={6}>
 
-            <form className="cotact-form">
-              <Input
-                type="text"
-                placeholder="Name"
-                label="*What's your name?" />
-              <Input
-                type="textarea"
-                rows={4}
-                placeholder="Message"
-                label="*What's on your mind?" />
-              <Input
-                type="text"
-                placeholder="E-mail address"
-                label="*What's your E-mail address?" />
-            </form>
+          <form className="cotact-form">
+            <Input
+              type="text"
+              placeholder="Name"
+              label="*What's your name?" />
+            <Input
+              type="textarea"
+              rows={4}
+              placeholder="Message"
+              label="*What's on your mind?" />
+            <Input
+              type="text"
+              placeholder="E-mail address"
+              label="*What's your E-mail address?" />
+          </form>
 
-          </Col>
+          <Button className="contact-page__message-button" bsStyle="primary" bsSize="large">Send message</Button>
 
-        </Row>
+        </Col>
 
-        <Row>
-          <Col contact-page__button_row mdOffset={6} xs={6}>
-            <Button className="contact-page__button_row__message-button" bsStyle="primary" bsSize="large">Send message</Button>
-          </Col>
-        </Row>
-      </div>
+      </Row>
     );
   }
 });

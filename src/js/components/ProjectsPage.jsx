@@ -1,20 +1,18 @@
 import React from 'react';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
 
 export default React.createClass({
 
   render() {
     return (
-      <div className="page container">
-        <div className="row">
-          <div className="row">
-            <div className="col-small-12">
-              <p className="welcome-note">
-                Temporary Placeholder
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <Row>
+          <Col xs={12}>
+            <p className="welcome-note">
+              Temporary Placeholder
+            </p>
+          </Col>
+        </Row>
     );
   }
 });
