@@ -1,5 +1,17 @@
 /*
   ####
+  CONTAINER
+  ####
+*/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+} 
+
+/*
+  ####
   NAVIGATION
   ####
 */
@@ -16,8 +28,8 @@
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 150px;
-    height: 150px;
+    line-height: 60px;
+    height: 60px;
     padding-top: 0;
 }
 
@@ -28,7 +40,7 @@ nav.navbar {
 
 nav.navbar .navbar-nav > li > a {
   color: white;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 nav.navbar .navbar-nav > li.selected > a {
@@ -57,13 +69,13 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 
 .welcome-note {
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   color: black;
   margin-top: 200px;
 }
 .welcome-message {
   text-align: center;
-  font-size: 40px;
+  font-size: 24px;
   color: black;
 }
 
@@ -83,7 +95,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 }
 
 .about-page__intro-text {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .about-page__button-row {
@@ -117,7 +129,7 @@ button.about-page__button-row__cv-button:hover {
 */
 
 .contact-page label {
-  font-size: 18px;
+  font-size: 14px;
   display: block;
 }
 
@@ -144,11 +156,11 @@ button.contact-page__button_row__message-button:hover {
 .contact-page__inputs input[type='text'] {
   height: 50px;
   border-radius: 0px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contact-page__inputs textarea {
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 0px;
 }
 
