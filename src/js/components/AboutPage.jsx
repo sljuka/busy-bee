@@ -31,7 +31,7 @@ export default React.createClass({
             I worked with varous companies lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
           </p>
 
-          <Button href="localhost:8080/public/example.pdf" className="about-page__cv-button" bsStyle="primary" bsSize="large">Curriculum Vitae</Button>
+          <Button href="files/example.pdf" download className="about-page__cv-button" bsStyle="primary" bsSize="large">Curriculum Vitae</Button>
 
         </Col>
       </Row>
