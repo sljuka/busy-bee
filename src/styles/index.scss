@@ -55,7 +55,7 @@ $hover: #888;
 nav.navbar {
   border-radius: 0px;
   background-color: $white;
-  border-color: $white;
+  border: 20px solid $white;
   margin-bottom: 0px;
 }
 
@@ -69,7 +69,11 @@ nav.navbar .navbar-nav > li > a {
 }
 
 nav.navbar .navbar-nav > li.selected > a {
-  color: $green;
+  color: $black;
+}
+
+nav.navbar .navbar-nav > li.selected {
+  background-color: $green;
 }
 
 nav.navbar .navbar-nav > li > a:hover {
@@ -77,7 +81,7 @@ nav.navbar .navbar-nav > li > a:hover {
 }
 
 nav.navbar .navbar-nav > li.selected > a:hover {
-  color: $green;
+  color: $black;
 }
 
 .navbar-default nav.navbar-collapse {
