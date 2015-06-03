@@ -32,40 +32,50 @@ $hover: #888;
   ----
 */
 
-.nav.nav-justified > li {
-  float: none;
-}
-
-.nav.nav-justified {
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
 .navbar-brand {
   padding: 0px;
 }
 
-/*.navbar-brand,
+.navbar-brand,
 .navbar-nav li a {
     line-height: 60px;
     height: 60px;
     padding-top: 0;
-}*/
+}
 
 nav.navbar {
   border-radius: 0px;
   background-color: $white;
-  border: 20px solid $white;
+  border: 0px solid $white;
   margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  nav.navbar {
+    border: 20px solid $white;
+  }
 }
 
 nav.navbar .container {
   background-color: $black;
 }
 
+nav.navbar .navbar-nav > li {
+  width: 100px;
+}
+
+nav.navbar .navbar-nav > li:last-of-type {
+  margin-right: -15px;
+}
+
 nav.navbar .navbar-nav > li > a {
   color: $white;
   font-size: 14px;
+  text-align: center;
+}
+
+nav.navbar .navbar-nav > li > a:hover {
+  color: $green;
 }
 
 nav.navbar .navbar-nav > li.selected > a {
@@ -76,16 +86,8 @@ nav.navbar .navbar-nav > li.selected {
   background-color: $green;
 }
 
-nav.navbar .navbar-nav > li > a:hover {
-  color: $hover;
-}
-
 nav.navbar .navbar-nav > li.selected > a:hover {
   color: $black;
-}
-
-.navbar-default nav.navbar-collapse {
-  border-color: $black;
 }
 
 /*
