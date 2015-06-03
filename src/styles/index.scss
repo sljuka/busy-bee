@@ -1,17 +1,18 @@
 /*
-  ####
-  BODY
-  ####
+  ----
+  COLORS
+  ----
 */
 
-body {
-  background-color: #ccc;
-}
+$green: #cacf1b;
+$white: white;
+$black: black;
+$hover: #888;
 
 /*
-  ####
+  ----
   CONTAINER
-  ####
+  ----
 */
 
 @media (min-width: 1200px) {
@@ -21,15 +22,14 @@ body {
 } 
 
 .page.container {
-  background-color: white;
-  min-height: 900px;
+  background-color: $white;
   padding-top: 200px;
 }
 
 /*
-  ####
+  ----
   NAVIGATION
-  ####
+  ----
 */
 
 .nav.nav-justified > li {
@@ -41,48 +41,57 @@ body {
   padding-right: 25%;
 }
 
-.navbar-brand,
+.navbar-brand {
+  padding: 0px;
+}
+
+/*.navbar-brand,
 .navbar-nav li a {
     line-height: 60px;
     height: 60px;
     padding-top: 0;
-}
+}*/
 
 nav.navbar {
   border-radius: 0px;
-  background-color: black;
+  background-color: $white;
+  border-color: $white;
   margin-bottom: 0px;
 }
 
+nav.navbar .container {
+  background-color: $black;
+}
+
 nav.navbar .navbar-nav > li > a {
-  color: white;
+  color: $white;
   font-size: 14px;
 }
 
 nav.navbar .navbar-nav > li.selected > a {
-  color: #cacf1b;
+  color: $green;
 }
 
 nav.navbar .navbar-nav > li > a:hover {
-  color: #888;
+  color: $hover;
 }
 
 nav.navbar .navbar-nav > li.selected > a:hover {
-  color: #cacf1b;
+  color: $green;
 }
 
 .navbar-default nav.navbar-collapse {
-  border-color: black;
+  border-color: $black;
 }
 
 /*
-  ####
+  ----
   COMMON
-  ####
+  ----
 */
 
 .green {
-  color: #cacf1b;
+  color: $green;
 }
 
 .bold {
@@ -90,26 +99,27 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 }
 
 /*
-  ####
+  ----
   HOME PAGE
-  ####
+  ----
 */
 
 .welcome-note {
   text-align: center;
   font-size: 40px;
-  color: black;
+  color: $black;
 }
 .welcome-message {
   text-align: center;
   font-size: 24px;
-  color: black;
+  color: $black;
+  padding-bottom: 100px;
 }
 
 /*
-  ####
+  ----
   ABOUT PAGE
-  ####
+  ----
 */
 
 .about-page__skill-list {
@@ -118,8 +128,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 }
 
 .about-page__skill-list--padded {
-  list-style: none;
-  padding-left: 0px;
+  @extend .about-page__skill-list;
   padding-bottom: 20px;
 }
 
@@ -128,7 +137,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 }
 
 .about-page__intro-text--padded {
-  font-size: 14px;
+  @extend .about-page__intro-text;
   padding-bottom: 20px;
 }
 
@@ -136,8 +145,8 @@ a.about-page__cv-button, button.about-page__cv-button {
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 0px;
-  background-color: black;
-  border-color: black;
+  background-color: $black;
+  border-color: $black;
   width: 150px;
   height: 30px;
   font-size: 14px;
@@ -145,8 +154,8 @@ a.about-page__cv-button, button.about-page__cv-button {
 }
 
 a.about-page__cv-button:hover, button.about-page__cv-button:hover {
-  background-color: #333;
-  border-color: black;
+  background-color: $hover;
+  border-color: $black;
 }
 
 .about-page__info-row--padded {
@@ -163,16 +172,16 @@ a.about-page__cv-button:hover, button.about-page__cv-button:hover {
 }
 
 /*
-  ####
+  ----
   CONTACT PAGE
-  ####
+  ----
 */
 
 button.contact-page__message-button {
   float: right;
   border-radius: 0px;
-  background-color: black;
-  border-color: black;
+  background-color: $black;
+  border-color: $black;
   width: 150px;
   height: 30px;
   font-size: 14px;
@@ -180,8 +189,8 @@ button.contact-page__message-button {
 }
 
 button.contact-page__message-button:hover {
-  background-color: #333;
-  border-color: black;
+  background-color: $hover;
+  border-color: $black;
 }
 
 .contact-page label {
@@ -214,12 +223,12 @@ button.contact-page__message-button:hover {
 }
 
 /*
-  ####
+  ----
   FOOTER
-  ####
+  ----
 */
 
 footer {
   height: 40px;
-  background-color: black;
+  background-color: $black;
 }
