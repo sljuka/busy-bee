@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express();
 
-app.get('/', function (req, res) {
+app.get('/pizza', function (req, res) {
   res.send('I AM BORN IN World!');
 });
 
