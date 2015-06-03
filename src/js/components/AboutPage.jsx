@@ -8,7 +8,7 @@ export default React.createClass({
   render() {
     return (
       <Row className="about-page">
-        <Col xs={6} xsOffset={3} mdOffset={0} md={4} className="about-page__pic">
+        <Col xs={6} xsOffset={3} mdOffset={0} md={4} className="about-page__pic padding-bottom-large">
           <img src="images/slika_no_border.png"/>
         </Col>
 

@@ -8,6 +8,7 @@ $green: #cacf1b;
 $white: white;
 $black: black;
 $hover: #888;
+$darkgrey: #333;
 
 /*
   ----
@@ -159,8 +160,8 @@ a.about-page__cv-button, button.about-page__cv-button {
   line-height: 7px;
 }
 
-a.about-page__cv-button:hover, button.about-page__cv-button:hover {
-  background-color: $hover;
+a.about-page__cv-button:hover, button.about-page__cv-button:hover, button.about-page__cv-button:active, a.about-page__cv-button:visited {
+  background-color: $darkgrey;
   border-color: $black;
 }
 
@@ -195,7 +196,7 @@ button.contact-page__message-button {
 }
 
 button.contact-page__message-button:hover {
-  background-color: $hover;
+  background-color: $darkgrey;
   border-color: $black;
 }
 
