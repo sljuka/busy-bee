@@ -231,12 +231,13 @@ button.contact-page__message-button:hover {
 .contact-page__circles {
   margin-top: 100px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .contact-page__circles img {
   display: inline-block;
-  width: 22%;
-  margin: 4%;
+  width: 70px;
+  margin: 10px;
   cursor: pointer;
 }
 

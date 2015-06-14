@@ -17,7 +17,7 @@ export default React.createClass({
     return (
       <Row className="contact-page">
 
-        <Col xs={10} xsOffset={1} mdOffset={1} md={5} className="contact-page__circles">
+        <Col xs={12} md={6} className="contact-page__circles">
           
           <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
             <img src="images/google_circle.png"/>
