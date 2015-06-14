@@ -17,7 +17,7 @@ export default React.createClass({
     return (
       <Row className="contact-page">
 
-        <Col xs={12} md={6} className="contact-page__circles">
+        <Col xs={12} md={6} lg={5}  className="contact-page__circles">
           
           <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
             <img src="images/google_circle.png"/>
@@ -33,7 +33,7 @@ export default React.createClass({
 
         </Col>
 
-        <Col xs={12} md={6}>
+        <Col xs={12} md={6} lg={7} className="contact-page__form">
 
           <form className="cotact-form">
             <Input

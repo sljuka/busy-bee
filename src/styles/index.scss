@@ -16,26 +16,6 @@ $darkgrey: #333;
   ----
 */
 
-@media (min-width: 769px) {
-  nav.navbar .navbar-nav > li {
-    width: 100px;
-  }
-
-  .page.container {
-    padding-top: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-
-  .page.container {
-    padding-top: 200px;
-  }
-} 
-
 .page.container {
   background-color: $white;
 }
@@ -62,12 +42,6 @@ nav.navbar {
   background-color: $white;
   border: 0px solid $white;
   margin-bottom: 0px;
-}
-
-@media (min-width: 768px) {
-  nav.navbar {
-    border: 20px solid $white;
-  }
 }
 
 nav.navbar .container {
@@ -185,9 +159,8 @@ a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about
   margin-top: 4px;
 }
 
-.about-page__pic img {
-  width: 100%;
-  margin-bottom: 20px;
+.about-page__pic {
+  text-align: center;
 }
 
 /*
