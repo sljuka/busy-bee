@@ -6,7 +6,7 @@ export default React.createClass({
 
   render() {
     return (
-      <Row>
+      <Row className="home-page">
         <Col xs={12}>
           <div className="welcome">
             <p className="welcome-title">

@@ -1,9 +1,40 @@
+.container {
+  width: 992px;
+}
+
+nav.navbar {
+
+}
+
+.preheader {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-family: OpenSansReg;
+  letter-spacing: 3px;
+  padding-left: 50px;
+}
+
 nav.navbar .navbar-nav > li {
-  width: 100px;
+  width: 120px;
+}
+
+nav > .container {
+  padding-top: 15px;
+  border: 1px solid #cacaca;
+  border-bottom: 0px;
+}
+
+.navbar-right {
+  float: right !important;
+  margin-right: -15px;
 }
 
 .page.container {
   padding-top: 200px;
+  border: 1px solid #cacaca;
+  border-top: 0px;
+  overflow-y: auto;
+  min-height: 800px;
 }
 
 .about-page__pic img {

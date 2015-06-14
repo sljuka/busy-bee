@@ -15,7 +15,7 @@ export default React.createClass({
     var logo = <img src="images/logo.png"/>
 
     return (
-      <Navbar brand={logo} toggleNavKey={0}>
+      <Navbar toggleNavKey={0}>
         <Nav right eventKey={0} defaultNavExpended={false}>
           <NavItem eventKey={1} onClick={this.handleClick} className={this.props.activePage == "home" ? "selected" : ""} >HOME</NavItem>
           <NavItem eventKey={2} onClick={this.handleClick} className={this.props.activePage == "about" ? "selected" : ""} >ABOUT</NavItem>

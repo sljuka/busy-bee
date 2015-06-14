@@ -1,14 +1,36 @@
 /*
   ----
+  FONTS
+  ----
+*/
+
+@font-face {
+  font-family:"OpenSansReg";
+  src: url("../fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
+}
+
+/*
+  ----
   COLORS
   ----
 */
 
+$lightBlack: #282828;
 $green: #cacf1b;
 $white: white;
 $black: black;
 $hover: #888;
 $darkgrey: #333;
+$blue: #47c0b9;
+$grey: #717171;
+
+.blue {
+  color: $blue;
+}
+
+.grey {
+  color: $grey;
+}
 
 /*
   ----
@@ -30,13 +52,6 @@ $darkgrey: #333;
   padding: 0px;
 }
 
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 60px;
-    height: 60px;
-    padding-top: 0;
-}
-
 nav.navbar {
   border-radius: 0px;
   background-color: $white;
@@ -45,35 +60,39 @@ nav.navbar {
 }
 
 nav.navbar .container {
-  background-color: $black;
+
 }
 
-
-
-nav.navbar .navbar-nav > li:last-of-type {
-  margin-right: -15px;
+nav.navbar .navbar-nav > li {
+  background-color: $lightBlack;
 }
 
+nav.navbar .navbar-brand,
 nav.navbar .navbar-nav > li > a {
+  line-height: 40px;
+  letter-spacing: 3px;
+  height: 40px;
+  padding-top: 0;
+  font-size: 15px;
   color: $white;
-  font-size: 14px;
   text-align: center;
+  font-family: OpenSansReg;
 }
 
 nav.navbar .navbar-nav > li > a:hover {
-  color: $green;
+  color: $blue;
 }
 
 nav.navbar .navbar-nav > li.selected > a {
-  color: $black;
+  color: $white;
 }
 
 nav.navbar .navbar-nav > li.selected {
-  background-color: $green;
+  background-color: $blue;
 }
 
 nav.navbar .navbar-nav > li.selected > a:hover {
-  color: $black;
+  color: $white;
 }
 
 /*
