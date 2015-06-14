@@ -8,13 +8,15 @@ export default React.createClass({
     return (
       <Row>
         <Col xs={12}>
-          <p className="welcome-note">
-            HELLO! I AM DAVID.
-          </p>
+          <div className="welcome">
+            <p className="welcome-title">
+              HELLO! I AM DAVID.
+            </p>
 
-          <p className="welcome-message">
-            I am an <span className="green bold">IT engineer.</span> I am looking forward to helping you!
-          </p>
+            <p className="welcome-message">
+              I am an <span className="green bold">IT engineer.</span> I am looking forward to helping you!
+            </p>
+          </div>
         </Col>
       </Row>
     );

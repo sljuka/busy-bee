@@ -8,7 +8,7 @@ export default React.createClass({
     return (
         <Row>
           <Col xs={12}>
-            <p className="welcome-note">
+            <p className="welcome-title">
               Temporary Placeholder
             </p>
           </Col>

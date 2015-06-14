@@ -8,11 +8,11 @@ export default React.createClass({
   render() {
     return (
       <Row className="about-page">
-        <Col xs={6} xsOffset={3} mdOffset={0} md={4} className="about-page__pic padding-bottom-large">
+        <Col xs={8} xsOffset={2} mdOffset={0} md={3} className="about-page__pic padding-bottom-large">
           <img src="images/slika_no_border.png"/>
         </Col>
 
-        <Col xs={12} md={8}>   
+        <Col xs={12} md={9}>   
 
           <p className="about-page__intro-text--padded">
             I am a software developer from Novi Sad, Serbia who loves to write software to build great products and help businesses succeed with their goals. I appreciate good design and I am seeing it's importance more than ever in todays apps, web sites and products.
@@ -31,7 +31,9 @@ export default React.createClass({
             I worked with varous companies lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
           </p>
 
-          <Button href="files/david_sljukic_CV.pdf" download className="about-page__cv-button" bsStyle="primary" bsSize="large">Curriculum Vitae</Button>
+          <div className="about-page__cv">
+            <Button href="files/david_sljukic_CV.pdf" download className="about-page__cv__button" bsStyle="primary" bsSize="large">Curriculum Vitae</Button>
+          </div>
 
         </Col>
       </Row>

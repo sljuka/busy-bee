@@ -1,0 +1,35 @@
+// OVERRIDES
+
+nav.navbar .navbar-nav > li {
+  width: 100%;
+}
+
+ul.navbar-nav {
+  margin: 0 -15px;
+}
+
+// HOME PAGE
+
+.welcome {
+  margin-top: 200px;
+}
+
+.about-page__pic {
+  text-align: center;
+}
+
+.about-page__pic img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.about-page__cv {
+  text-align: center;
+}
+
+.contact-page__message-button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+}

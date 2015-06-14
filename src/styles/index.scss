@@ -16,15 +16,28 @@ $darkgrey: #333;
   ----
 */
 
+@media (min-width: 769px) {
+  nav.navbar .navbar-nav > li {
+    width: 100px;
+  }
+
+  .page.container {
+    padding-top: 20px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 970px;
+  }
+
+  .page.container {
+    padding-top: 200px;
   }
 } 
 
 .page.container {
   background-color: $white;
-  padding-top: 200px;
 }
 
 /*
@@ -61,9 +74,7 @@ nav.navbar .container {
   background-color: $black;
 }
 
-nav.navbar .navbar-nav > li {
-  width: 100px;
-}
+
 
 nav.navbar .navbar-nav > li:last-of-type {
   margin-right: -15px;
@@ -111,7 +122,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   ----
 */
 
-.welcome-note {
+.welcome-title {
   text-align: center;
   font-size: 40px;
   color: $black;
@@ -148,7 +159,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   padding-bottom: 20px;
 }
 
-a.about-page__cv-button, button.about-page__cv-button {
+a.about-page__cv__button, button.about-page__cv-button {
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 0px;
@@ -160,7 +171,7 @@ a.about-page__cv-button, button.about-page__cv-button {
   line-height: 7px;
 }
 
-a.about-page__cv-button:hover, button.about-page__cv-button:hover, button.about-page__cv-button:active, a.about-page__cv-button:visited {
+a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about-page__cv-button:active, a.about-page__cv-button:visited {
   background-color: $darkgrey;
   border-color: $black;
 }
@@ -175,7 +186,8 @@ a.about-page__cv-button:hover, button.about-page__cv-button:hover, button.about-
 }
 
 .about-page__pic img {
-  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /*
@@ -189,8 +201,6 @@ button.contact-page__message-button {
   border-radius: 0px;
   background-color: $black;
   border-color: $black;
-  width: 150px;
-  height: 30px;
   font-size: 14px;
   line-height: 0px;
 }
@@ -225,7 +235,8 @@ button.contact-page__message-button:hover {
 
 .contact-page__circles img {
   display: inline-block;
-  margin: 10px;
+  width: 22%;
+  margin: 4%;
   cursor: pointer;
 }
 
