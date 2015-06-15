@@ -18,6 +18,7 @@ nav.navbar .navbar-nav > li {
 
 .about-page__cv {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-page__form {
@@ -28,9 +29,26 @@ button.contact-page__message-button {
   float: right;
   border-radius: 0px;
   background-color: black;
-  border-color: black;
-  font-size: 14px;
-  height: 40px;
+  font-size: 15px;
+  height: 30px;
   line-height: 0px;
   width: 160px;
+}
+
+.floating-contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.contact-page__text {
+  text-align: center;
+}
+
+.contact-circles {
+  
+  img {
+    cursor: pointer;
+    margin: 10px;
+  }
 }

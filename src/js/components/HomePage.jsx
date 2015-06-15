@@ -8,13 +8,13 @@ export default React.createClass({
     return (
       <Row className="home-page">
         <Col xs={12}>
-          <div className="welcome">
-            <p className="welcome-title">
-              HELLO! I AM DAVID.
+          <div className="home-page__greeting-panel">
+            <h1 className="home-page__greetings">Hello!</h1>
+            <p className="home-page__paras">
+              I'm David. I'm an IT engineer
             </p>
-
-            <p className="welcome-message">
-              I am an <span className="green bold">IT engineer.</span> I am looking forward to helping you!
+            <p className="home-page__paras">
+              and I'm looking forward to helping you!
             </p>
           </div>
         </Col>

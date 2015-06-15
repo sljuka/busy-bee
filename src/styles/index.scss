@@ -42,6 +42,7 @@
 */
 
 .page.container {
+  position: relative;
   background-color: $white;
 }
 
@@ -62,21 +63,17 @@ nav.navbar {
   margin-bottom: 0px;
 }
 
-nav.navbar .container {
-  
-}
-
 nav.navbar .navbar-nav > li {
   background-color: $lightBlack;
 }
 
 nav.navbar .navbar-brand,
 nav.navbar .navbar-nav > li > a {
-  line-height: 40px;
+  line-height: 42px;
   letter-spacing: 3px;
   height: 40px;
   padding-top: 0;
-  font-size: 15px;
+  font-size: 14px;
   color: $white;
   text-align: center;
   font-family: OpenSansReg;
@@ -126,16 +123,20 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   ----
 */
 
-.welcome-title {
-  text-align: center;
-  font-size: 40px;
-  color: $black;
+.home-page__greeting-panel {
+  font-family: OpenSansReg;
+  padding-left: 80px;
 }
-.welcome-message {
-  text-align: center;
-  font-size: 24px;
+
+.home-page__greetings {
+  font-size: 154px;
+  color: $blue;
+}
+.home-page__paras {
+  font-size: 30px;
   color: $black;
-  padding-bottom: 100px;
+  margin: 0px;
+  padding-left: 10px;
 }
 
 /*
@@ -145,7 +146,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 */
 
 .about-page__info-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 0px;
@@ -176,7 +177,7 @@ a.about-page__cv__button, button.about-page__cv-button {
   border-color: $black;
   width: 230px;
   height: 30px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
   font-family: OpenSansReg;
   letter-spacing: 4px;
@@ -203,17 +204,61 @@ a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about
 
 /*
   ----
+  PROJECT PAGE
+  ----
+*/
+
+.project-list {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+.project-list__item {
+  border: 1px solid $borderGrey;
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 0px;
+}
+
+.project-btn-panel {
+  float: right;
+
+  a {
+    width: 100px;
+    border-radius: 0px;
+  }
+
+  .project-sample-button {
+    background-color: $black;
+  }
+}
+
+.project-sample-button:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+/*
+  ----
   CONTACT PAGE
   ----
 */
 
 button.contact-page__message-button {
-  float: right;
   border-radius: 0px;
-  background-color: $black;
-  border-color: $black;
-  font-size: 14px;
-  line-height: 0px;
+  background-color: black;
+  border-color: black;
+  width: 170px;
+  height: 25px;
+  font-size: 15px;
+  font-family: OpenSansReg;
+  letter-spacing: 3px;
+  padding: 0px;
 }
 
 button.contact-page__message-button:hover {
@@ -227,6 +272,7 @@ button.contact-page__message-button:hover {
 }
 
 .contact-page input[type='text'] {
+  margin-bottom: 10px;
   height: 35px;
   border-radius: 0px;
   font-size: 14px;
@@ -234,20 +280,22 @@ button.contact-page__message-button:hover {
 }
 
 .contact-page textarea {
+  margin-bottom: 10px;
   font-size: 14px;
   border-radius: 0px;
   width: 100%;
 }
 
-.contact-page__circles {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
+.contact-page__text {
+  text-align: right;
 }
 
-.contact-page__circles img {
-  display: inline-block;
-  width: 70px;
-  margin: 10px;
-  cursor: pointer;
+.contact-page__text__name {
+  margin-top: 13px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-page__text__info {
+  font-size: 15px;
 }

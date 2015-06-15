@@ -37,12 +37,19 @@ nav > .container {
 }
 
 button.contact-page__message-button {
-  float: right;
-  border-radius: 0px;
-  background-color: black;
-  border-color: black;
-  font-size: 14px;
-  height: 40px;
-  line-height: 0px;
-  width: 160px;
+
+}
+
+.floating-contact {
+  position: absolute;
+  top: 88%;
+  left: 76%;
+}
+
+.contact-circles {
+  
+  img {
+    cursor: pointer;
+    margin: 10px;
+  }
 }

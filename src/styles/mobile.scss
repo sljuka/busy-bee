@@ -40,6 +40,9 @@ nav.navbar {
   text-align: center;
 }
 
+.contact-page__text {
+  text-align: center;
+}
 
 button.contact-page__message-button {
   float: right;
@@ -52,4 +55,26 @@ button.contact-page__message-button {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 40px;
+}
+
+.floating-contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-circles {
+  
+  img {
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+  }
+}
+
+.project-list {
+  margin-top: 20px;
+}
+
+.project-btn-panel, .project-btn-panel > div, .project-btn-panel > div > a {
+  width: 100%;
 }

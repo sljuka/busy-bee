@@ -7,6 +7,7 @@ import ContactPage from './ContactPage.jsx'
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Footer from './Footer.jsx';
+import FloatingContact from './FloatingContact.jsx';
 
 export default React.createClass({
 
@@ -37,6 +38,11 @@ export default React.createClass({
 
         <div className="page container">
           {pages[this.state.activePage]}
+
+          <div className="floating-contact">
+            <FloatingContact />
+          </div>
+
         </div>
 
       </div>

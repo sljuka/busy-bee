@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/lib/Button';
 import Input from 'react-bootstrap/lib/Input';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
 import Tooltip from 'react-bootstrap/lib/Tooltip';
+import FloatingContact from './FloatingContact.jsx';
 
 export default React.createClass({
 
@@ -17,37 +18,34 @@ export default React.createClass({
     return (
       <Row className="contact-page">
 
-        <Col xs={12} md={6} lg={5}  className="contact-page__circles">
+        <Col xs={12} md={6} className="contact-page__text">
           
-          <OverlayTrigger placement="top" overlay={gtooltip} trigger="click">
-            <img src="images/google_circle.png"/>
-          </OverlayTrigger>
-          
-          <OverlayTrigger placement="top" overlay={stooltip} trigger="click">
-            <img src="images/skype_circle.png"/>
-          </OverlayTrigger>
+          <p className="blue bold contact-page__text__name">David Sljukic</p>
+
+          <p className="contact-page__text__info">email: <a className="blue" href="mailto:david.sljukic@gmail.com">david.sljukic@gmail.com</a></p>
+
+          <p className="contact-page__text__info">github: <a className="blue" href="https://github.com/sljuka">https://github.com/sljuka</a></p>
+
+          <p className="contact-page__text__info">skype: david.sljukic</p>
 
         </Col>
 
-        <Col xs={12} md={6} lg={7} className="contact-page__form">
+        <Col xs={12} md={6} className="contact-page__form">
 
           <form className="cotact-form">
             <Input
               type="text"
-              placeholder="Name"
-              label="*What's your name?" />
-            <Input
-              type="textarea"
-              rows={4}
-              placeholder="Message"
-              label="*What's on your mind?" />
+              placeholder="Name" />
             <Input
               type="text"
-              placeholder="E-mail address"
-              label="*What's your E-mail address?" />
+              placeholder="E-mail address" />
+            <Input
+              type="textarea"
+              rows={8}
+              placeholder="Message" />
           </form>
 
-          <Button className="contact-page__message-button" bsStyle="primary" bsSize="large">Send message</Button>
+          <Button className="contact-page__message-button" bsStyle="primary" bsSize="large">send message</Button>
 
         </Col>
 
