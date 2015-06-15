@@ -78,3 +78,14 @@ button.contact-page__message-button {
 .project-btn-panel, .project-btn-panel > div, .project-btn-panel > div > a {
   width: 100%;
 }
+
+.home-page__greeting-panel {
+  font-family: OpenSansReg;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.home-page__greetings {
+  font-size: 100px;
+  color: $blue;
+}
