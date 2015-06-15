@@ -18,7 +18,7 @@ export default React.createClass({
     return (
       <Row className="contact-page">
 
-        <Col xs={12} md={6} className="contact-page__text">
+        <Col xs={12} className="contact-page__text">
           
           <p className="blue bold contact-page__text__name">David Sljukic</p>
 
@@ -27,25 +27,6 @@ export default React.createClass({
           <p className="contact-page__text__info">github: <a className="blue" href="https://github.com/sljuka">https://github.com/sljuka</a></p>
 
           <p className="contact-page__text__info">skype: david.sljukic</p>
-
-        </Col>
-
-        <Col xs={12} md={6} className="contact-page__form">
-
-          <form className="cotact-form">
-            <Input
-              type="text"
-              placeholder="Name" />
-            <Input
-              type="text"
-              placeholder="E-mail address" />
-            <Input
-              type="textarea"
-              rows={8}
-              placeholder="Message" />
-          </form>
-
-          <Button className="contact-page__message-button" bsStyle="primary" bsSize="large">send message</Button>
 
         </Col>
 
