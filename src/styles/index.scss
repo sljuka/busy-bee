@@ -1,3 +1,5 @@
+@import "colors";
+
 /*
   ----
   FONTS
@@ -9,27 +11,28 @@
   src: url("../fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
-/*
-  ----
-  COLORS
-  ----
-*/
-
-$lightBlack: #282828;
-$green: #cacf1b;
-$white: white;
-$black: black;
-$hover: #888;
-$darkgrey: #333;
-$blue: #47c0b9;
-$grey: #717171;
-
 .blue {
   color: $blue;
 }
 
 .grey {
   color: $grey;
+}
+
+.white {
+  color: $white;
+}
+
+.contact-link {
+  color: $white;
+}
+
+.contact-link:hover {
+  color: $blue;
+}
+
+.preheader-logo {
+  display: none;
 }
 
 /*
@@ -60,7 +63,7 @@ nav.navbar {
 }
 
 nav.navbar .container {
-
+  
 }
 
 nav.navbar .navbar-nav > li {
@@ -93,6 +96,14 @@ nav.navbar .navbar-nav > li.selected {
 
 nav.navbar .navbar-nav > li.selected > a:hover {
   color: $white;
+}
+
+.preheader {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-family: OpenSansReg;
+  letter-spacing: 3px;
+  padding-left: 50px;
 }
 
 /*
@@ -133,6 +144,13 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   ----
 */
 
+.about-page__info-title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 0px;
+}
+
 .about-page__skill-list {
   list-style: none;
   padding-left: 0px;
@@ -153,15 +171,16 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 }
 
 a.about-page__cv__button, button.about-page__cv-button {
-  margin-top: 40px;
-  margin-bottom: 40px;
   border-radius: 0px;
   background-color: $black;
   border-color: $black;
-  width: 150px;
+  width: 230px;
   height: 30px;
-  font-size: 14px;
-  line-height: 7px;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: OpenSansReg;
+  letter-spacing: 4px;
+  padding: 0px;
 }
 
 a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about-page__cv-button:active, a.about-page__cv-button:visited {
@@ -173,13 +192,13 @@ a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about
   padding-bottom: 40px;
 }
 
-.about-page__info-row img, .about-page__info-row--padded img {
-  height: 70px;
-  margin-top: 4px;
-}
-
 .about-page__pic {
   text-align: center;
+}
+
+.about-page__pic img {
+  padding: 0px;
+  border: 1px solid $borderGrey;
 }
 
 /*
@@ -231,15 +250,4 @@ button.contact-page__message-button:hover {
   width: 70px;
   margin: 10px;
   cursor: pointer;
-}
-
-/*
-  ----
-  FOOTER
-  ----
-*/
-
-footer {
-  height: 40px;
-  background-color: $black;
 }

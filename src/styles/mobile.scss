@@ -1,3 +1,5 @@
+@import "colors";
+
 // OVERRIDES
 
 nav.navbar .navbar-nav > li {
@@ -6,6 +8,20 @@ nav.navbar .navbar-nav > li {
 
 ul.navbar-nav {
   margin: 0 -15px;
+}
+
+nav.navbar {
+  background-color: $lightBlack;
+}
+
+.preheader {
+  display: none;
+}
+
+.preheader-logo {
+  display: block;
+  margin-top: 1px;
+  padding-left: 30px;
 }
 
 // HOME PAGE

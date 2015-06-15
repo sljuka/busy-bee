@@ -10,7 +10,7 @@ export default React.createClass({
 
   render() {
 
-    var gtooltip = <Tooltip>somemail@gmail.com</Tooltip>;
+    var gtooltip = <Tooltip><a href="mailto:david.sljukic@gmail.com" className="contact-link">david.sljukic@gmail.com</a></Tooltip>;
     var stooltip = <Tooltip><b>Skype ID: </b>david.sljukic</Tooltip>;
     var ftooltip = <Tooltip>facebook.com/sljukic</Tooltip>;
 
@@ -25,10 +25,6 @@ export default React.createClass({
           
           <OverlayTrigger placement="top" overlay={stooltip} trigger="click">
             <img src="images/skype_circle.png"/>
-          </OverlayTrigger>
-
-          <OverlayTrigger placement="top" overlay={ftooltip} trigger="click">
-            <img src="images/facebook_circle.png"/>
           </OverlayTrigger>
 
         </Col>
