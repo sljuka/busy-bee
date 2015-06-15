@@ -32,7 +32,7 @@ export default React.createClass({
 
     return (
       <div>
-        <div className="container preheader"><span className="grey small">DAVID SLJUKIC - </span><span className="blue small">PORTFOLIO</span></div>
+        <div className="container preheader"><span className="grey small">DAVID ŠLJUKIC - </span><span className="blue small">PORTFOLIO</span></div>
         
         <Navbar activePage={this.state.activePage} pageChange={this.pageChange} />
 

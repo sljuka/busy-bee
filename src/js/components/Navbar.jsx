@@ -12,7 +12,7 @@ export default React.createClass({
 
   render() {
 
-    var logo = <div className="preheader-logo"><span className="white small">DAVID SLJUKIC - </span><span className="blue small">PORTFOLIO</span></div>
+    var logo = <div className="preheader-logo"><span className="white small">DAVID ŠLJUKIC - </span><span className="blue small">PORTFOLIO</span></div>
 
     return (
       <Navbar brand={logo} toggleNavKey={0}>

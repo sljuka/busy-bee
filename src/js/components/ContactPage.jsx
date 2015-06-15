@@ -20,7 +20,7 @@ export default React.createClass({
 
         <Col xs={12} className="contact-page__text">
           
-          <p className="blue bold contact-page__text__name">David Sljukic</p>
+          <p className="blue bold contact-page__text__name">David Šljukic</p>
 
           <p className="contact-page__text__info">email: <a className="blue" href="mailto:david.sljukic@gmail.com">david.sljukic@gmail.com</a></p>
 
