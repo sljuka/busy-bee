@@ -190,7 +190,7 @@ a.about-page__cv__button, button.about-page__cv-button {
 
 a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about-page__cv-button:active, a.about-page__cv-button:visited {
   background-color: $blue;
-  border-color: $black;
+  border-color: $blue;
 }
 
 .about-page__info-row--padded {
@@ -252,6 +252,7 @@ a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about
 
 .project-sample-button:hover {
   background-color: $blue;
+  border-color: $blue;
   color: $white;
 }
 
