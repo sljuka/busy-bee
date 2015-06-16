@@ -15,6 +15,10 @@
   color: $blue;
 }
 
+.darkBlue {
+  color: $darkBlue;
+}
+
 .grey {
   color: $grey;
 }
@@ -200,6 +204,14 @@ a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about
 .about-page__pic img {
   padding: 0px;
   border: 1px solid $borderGrey;
+}
+
+.about-page__info-subtitle {
+  color: $darkBlue;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 1.42857;
 }
 
 /*

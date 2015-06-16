@@ -11,10 +11,10 @@ export default React.createClass({
           <div className="home-page__greeting-panel">
             <h1 className="home-page__greetings">Hello!</h1>
             <p className="home-page__paras">
-              I'm David. I'm an IT engineer
+              I'm David. I'm an software engineer
             </p>
             <p className="home-page__paras">
-              and I'm looking forward to helping you!
+              and I'm looking forward to working with you!
             </p>
           </div>
         </Col>
