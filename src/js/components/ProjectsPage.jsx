@@ -7,7 +7,9 @@ export default React.createClass({
 
   render() {
     return (
-        <Project />
+        <div className="projects-page">
+          <Project />
+        </div>
     );
   }
 });

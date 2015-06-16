@@ -156,6 +156,11 @@ nav.navbar .navbar-nav > li.selected > a:hover {
   margin-top: 0px;
 }
 
+.about-page__info-title--margin {
+  @extend .about-page__info-title;
+  margin-top: 30px;
+}
+
 .about-page__skill-list {
   list-style: none;
   padding-left: 0px;
@@ -168,6 +173,7 @@ nav.navbar .navbar-nav > li.selected > a:hover {
 
 .about-page__intro-text {
   font-size: 14px;
+  text-align: justify;
 }
 
 .about-page__intro-text--padded {
@@ -204,6 +210,10 @@ a.about-page__cv__button:hover, button.about-page__cv-button:hover, button.about
 .about-page__pic img {
   padding: 0px;
   border: 1px solid $borderGrey;
+}
+
+.about-page__text {
+  padding-right: 30px;
 }
 
 .about-page__info-subtitle {

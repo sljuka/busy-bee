@@ -24,7 +24,7 @@ nav > .container {
 }
 
 .page.container {
-  padding-top: 200px;
+  padding-top: 100px;
   border: 1px solid #cacaca;
   border-top: 0px;
   overflow-y: auto;
@@ -34,10 +34,6 @@ nav > .container {
 .about-page__pic img {
   margin-bottom: 20px;
   width: 230px;
-}
-
-button.contact-page__message-button {
-
 }
 
 .floating-contact {
@@ -52,4 +48,20 @@ button.contact-page__message-button {
     cursor: pointer;
     margin: 10px;
   }
+}
+
+.home-page {
+  margin-top: 100px;
+}
+
+.about-page {
+  margin-top: 50px;
+}
+
+.projects-page {
+  margin-top: 100px;
+}
+
+.contact-page {
+  margin-top: 100px;
 }
